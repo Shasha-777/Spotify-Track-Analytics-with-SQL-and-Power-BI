@@ -1,0 +1,94 @@
+# Spotify Track Analytics with SQL and Power BI
+
+## 1. Introduction
+This project demonstrates how to use structured SQL queries to derive insights from Spotify's song dataset and visualize trends through Power BI. The goal is to analyze song attributes like popularity, genre, mood, and energy, and explore how these features evolve across time and artist profiles.
+
+---
+
+## 2. Objectives
+- To analyze patterns in song popularity, energy, and valence using SQL
+- To identify trends in music features across different genres and years
+- To create professional Power BI visualizations that communicate analytical results clearly
+
+---
+
+## 3. Tools and Technologies
+| Tool           | Purpose                            |
+|----------------|-------------------------------------|
+| SQLiteOnline   | Executing SQL queries              |
+| Power BI       | Visualizing analytical results      |
+| CSV/Excel      | Exporting and cleaning data         |
+
+---
+
+## 4. Dataset Description
+The dataset contains over 2,000 Spotify tracks and includes:
+- **Categorical Fields**: `artist`, `song`, `genre`, `explicit`
+- **Numerical Fields**: `popularity`, `year`, `duration_ms`, `danceability`, `energy`, `acousticness`, `valence`, `loudness`, `tempo`
+
+---
+
+## 5. SQL Analysis Workflow
+Over 25 queries were developed to answer business-relevant questions in these areas:
+
+### 5.1 Popularity Analysis
+- Identify the top 10 most popular songs
+- Compare popularity scores across years
+- Analyze impact of explicit content on popularity
+- Explore the relationship between loudness and popularity
+
+### 5.2 Genre and Track Feature Analysis
+- Determine the most common genres
+- Discover the most danceable songs
+- Compare average energy and danceability by genre
+- Identify songs with extreme valence (moodiest/happiest)
+
+### 5.3 Time-Series Trends
+- Track valence trends over time
+- Analyze year-wise growth of explicit content
+- Evaluate how song durations change year to year
+
+### 5.4 Artist Metrics
+- Top artists by average popularity
+- Artists with high valence variability (emotional range)
+- Happiest artists by average valence
+
+---
+
+## 6. Power BI Visualizations
+The following visual components were created based on SQL-exported CSVs:
+- **Bar Charts**: Top 10 genres, top 10 songs by popularity
+- **Line Charts**: Popularity and valence trends, explicit content growth
+- **Scatter Plot**: Danceability vs Energy
+- **Binned Column Chart**: Loudness vs Popularity
+
+---
+
+## 7. Key Insights
+- Explicit tracks show slightly higher average popularity than non-explicit ones
+- Danceable and energetic genres tend to perform better
+- A mild decline in average valence suggests more emotionally neutral or sad music recently
+- Loudness and popularity are generally aligned, but there are low-volume popular tracks
+- Some artists stand out by delivering both popular and emotionally diverse music
+
+---
+
+## 8. Conclusion
+This project applies SQL effectively to dissect a structured dataset and integrates the results into professional data visualizations. It highlights the potential of music analytics and demonstrates how technical data skills can be applied to understand audience trends and audio characteristics.
+
+---
+
+## 9. Author
+**Shashanka Oruganti**  
+M.S. in Data Science | SQL & BI Developer Aspirant  
+📧 orugantishashanka@gmail.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/shashanka-oruganti-136710293)
+
+---
+
+## 10. Future Improvements
+- Add machine learning models to predict song popularity
+- Extend dataset with lyrics for sentiment-based mood analysis
+- Develop an interactive Streamlit dashboard to explore track-level data
+- Publish a blog article summarizing analytical takeaways with screenshots
+
